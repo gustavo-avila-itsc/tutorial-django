@@ -1,0 +1,35 @@
+	{% load staticfiles %}
+	<!DOCTYPE html>
+	<html>
+	{% load staticfiles %}
+	<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<title>{{ cabeza }}</title>
+	</head>
+	<body>
+	<p><span style="color: #ff6600;">{{p}}</span></p>
+	<table style="height: 51px;" width="180">
+	<tbody>
+	<tr>
+	<td style="width: 82px;"><span style="color: #993366;">{{f1}}</span></td>
+	<td style="width: 82px;"><span style="color: #00ff00;">{{f2}}</span></td>
+	</tr>
+	</tbody>
+	</table>
+	<p><img  src="{{imagen}}" /></p>
+
+
+	<ul>
+	{% for post in posts %}
+
+		<li><a href="/post/{{ post.id }}/">{{ post.title }}</a> </li>
+
+	{% endfor %} 
+
+	</ul>
+
+
+	</body>
+	</html>

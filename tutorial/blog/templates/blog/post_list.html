@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+	
+{% block titulo %}   
+<div class="page-header">
+    <h1><a href="/">{{p}}</a></h1>
+</div>
+{% endblock %}
+{% block content %}
+	{% for post in posts %}
+        
+ 	<div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="/articulo/{{ post.id }}/">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                
+            </div>
+        </div>
+    	</div>
+     {% endfor %}
+{% endblock content %}
+	
+
+
+

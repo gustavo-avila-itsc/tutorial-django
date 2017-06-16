@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>{{post.title}}</title>
+	</head>
+	<body>
+	<p><span style="color: #ff6600;">{{post.text}}</span></p>
+	<table style="height: 51px;" width="180">
+	</table>
+	<p><img  src="{{post.imagen}}" /></p>
+
+
+	
+
+	</body>
+	</html>

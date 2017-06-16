@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+	{% load staticfiles %}
+	<head>
+		<title>{{post.title}}</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	</head>
+	<body>
+	<p><span style="color: #ff6600;">{{post.text}}</span></p>
+	<table style="height: 51px;" width="180">
+	</table>
+	<p><img  src="{{post.imagen}}" /></p>
+
+
+	
+
+	</body>
+	</html>
